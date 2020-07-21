@@ -1,0 +1,14 @@
+{
+	"pipeline":[
+		{
+			"type":"filters.range",
+			"limits":"Classification[9:9]"
+		},
+		{
+			"resolution": 1.0,
+			"nodata": -9999,
+			"output_type": "mean",
+			"filename":"RasterSOL.tif"
+		}
+	]
+}

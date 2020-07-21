@@ -1,0 +1,17 @@
+{
+	"pipeline":[
+		{
+			"type":"filters.range",
+			"limits":"Classification[17:17]"
+		},
+		{
+			"type":"filters.hag_dem",
+			"raster":"toto.tif",
+			"zero_ground":"false"
+		},
+		{
+			"type":"filters.range",
+			"limits":"HeightAboveGround[0.2:]"
+		}	
+	]
+}

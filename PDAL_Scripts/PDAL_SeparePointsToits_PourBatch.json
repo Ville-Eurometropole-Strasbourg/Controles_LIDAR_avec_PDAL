@@ -1,0 +1,8 @@
+{
+	"pipeline":[
+		{
+			"type":"filters.range",
+			"limits":"Classification[6:6]"
+		}	
+	]
+}
